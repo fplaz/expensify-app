@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ExpenseList with expenses 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Expense List
+    </h1>
+    <div>
+      <a
+        href="/edit/undefined"
+      >
+        <h3>
+          Gum
+        </h3>
+      </a>
+      <p>
+        195 - Wed Dec 31 1969 21:00:00 GMT-0300
+      </p>
+    </div>
+    <div>
+      <a
+        href="/edit/undefined"
+      >
+        <h3>
+          Rent
+        </h3>
+      </a>
+      <p>
+        109500 - -345600000
+      </p>
+    </div>
+    <div>
+      <a
+        href="/edit/undefined"
+      >
+        <h3>
+          Credit Card
+        </h3>
+      </a>
+      <p>
+        4500 - 345600000
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Should render ExpenseList without expenses 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Expense List
+    </h1>
+  </div>
+</DocumentFragment>
+`;
