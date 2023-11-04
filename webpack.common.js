@@ -17,7 +17,6 @@ module.exports = {
       test: /\.s?css$/,
       use: [
         miniCSS.loader,
-        //'style-loader',
         {
           loader: 'css-loader',
           options: {

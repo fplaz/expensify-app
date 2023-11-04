@@ -39,7 +39,7 @@ exports[`Should render Expense Dashboard page correctly 1`] = `
                 name="start"
                 placeholder="Start Date"
                 type="text"
-                value="10/01/2023"
+                value="11/01/2023"
               />
               <p
                 class="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
@@ -75,7 +75,7 @@ exports[`Should render Expense Dashboard page correctly 1`] = `
                 name="end"
                 placeholder="End Date"
                 type="text"
-                value="10/31/2023"
+                value="11/30/2023"
               />
               <p
                 class="DateInput_screenReaderMessage DateInput_screenReaderMessage_1"
