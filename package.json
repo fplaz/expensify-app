@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.13.0"
+  },
   "scripts": {
     "serve": "live-server public",
     "build:dev": "webpack --config webpack.dev.js",
     "build:prod": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server",
     "test": "jest --watchAll",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "jest": {
     "testEnvironment": "jsdom",
