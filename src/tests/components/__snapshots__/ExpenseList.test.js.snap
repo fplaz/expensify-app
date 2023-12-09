@@ -15,7 +15,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </h3>
       </a>
       <p>
-        195-December 31st, 1969
+        $0.20-December 31st, 1969
       </p>
     </div>
     <div>
@@ -27,7 +27,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </h3>
       </a>
       <p>
-        109500-Invalid date
+        $109.50-Invalid date
       </p>
     </div>
     <div>
@@ -39,7 +39,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </h3>
       </a>
       <p>
-        4500-Invalid date
+        $4.50-Invalid date
       </p>
     </div>
   </div>
