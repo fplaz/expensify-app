@@ -13,7 +13,8 @@ export default class ExpenseForm extends React.Component {
             amount: props.expense ? (props.expense.amount / 100).toString() : '',
             createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
             calendarFocused: false,
-            error: ''
+            error: '',
+            buttonText: props.buttonText || "Add Expense"
         }
     }
     onDescriptionChnage = (e) => {
@@ -70,7 +71,7 @@ export default class ExpenseForm extends React.Component {
                         isOutsideRange={() => false}
                     />
                     <textarea placeholder="Add a note for your expense (optional)" value={this.state.note} onChange={this.onNoteChange}></textarea>
-                    <button>Add Expense</button>
+                    <button>{this.state.buttonText}</button>
                 </form>
             </div>
         )

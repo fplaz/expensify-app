@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import ExpenseForm from './ExpenseForm'
 import { useNavigate, useParams } from 'react-router-dom'
-import { editExpense, removeExpense } from '../actions/expenses'
+import { editExpense, startRemoveExpense, removeExpense, StartEditExpense } from '../actions/expenses'
 
 const EditExpensePage = (props) => {
     const navigate = useNavigate()
@@ -10,13 +10,14 @@ const EditExpensePage = (props) => {
         <div>
             <ExpenseForm
                 expense={props.expense}
+                buttonText="Edit Expense!"
                 onSubmit={(expense) => {
-                    props.dispatch(editExpense(props.expense.id, expense))
+                    props.dispatch(StartEditExpense(props.expense.id, expense))
                     navigate('/')
                 }}
             />
             <button onClick={() => {
-                props.dispatch(removeExpense(props.expense.id))
+                props.dispatch(startRemoveExpense(props.expense.id))
                 navigate('/')
             }}>Remove</button>
         </div>

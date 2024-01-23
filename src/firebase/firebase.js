@@ -1,5 +1,6 @@
 const { initializeApp } = require('firebase/app')
 const {getDatabase}  = require('firebase/database')
+const { getAuth, GoogleAuthProvider, signInWithPopup, signOut } = require("firebase/auth");
 
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
@@ -15,8 +16,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig)
 const db = getDatabase(app)
 
+//Auth
+const auth = getAuth()
+const provider = new GoogleAuthProvider()
 
-export default db
+
+export {provider, auth, signInWithPopup, signOut, db as default}
 
 
 //Dummy data
